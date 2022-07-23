@@ -4,10 +4,10 @@
 
 function print_ew () {
 
-    if [[ "$1" == "warn" ]]; then
+    if [[ "$1" == "error" ]]; then
         s_text="\x1b[38;5;1m[ERROR]:";
         text="$2\n";
-    elif [[ "$1" == "error" ]]; then
+    elif [[ "$1" == "warn" ]]; then
         s_text="\x1b[38;5;220m[WARNING]:";
         text="$2\n";
     elif [[ "$1" == "question" ]]; then
