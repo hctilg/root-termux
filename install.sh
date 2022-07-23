@@ -59,16 +59,17 @@ fn_install () {
 
             ARCHITECTURE=$(dpkg --print-architecture);
 
-            case "$ARCHITECTURE" in
-                aarch64)
-                    ARCHITECTURE=arm64 ;;
-                arm)
-                    ARCHITECTURE=armhf ;;
-                amd64|x86_64)
-                    ARCHITECTURE=amd64 ;;
-                *)
-                    print_ew "error" "Unknown architecture :- $ARCHITECTURE" && exit 1 ;;
-            esac
+            if [[ "$ARCHITECTURE" == "aarch64" ]]; then
+                ARCHITECTURE="arm64";
+            elif [[ "$ARCHITECTURE" == "arm" ]]; then
+                ARCHITECTURE="armhf";
+            elif [[ "$ARCHITECTURE" == "amd64" ]]; then
+                ARCHITECTURE="amd64";
+            elif [[ "$ARCHITECTURE" == "x86_64" ]]; then
+                ARCHITECTURE="amd64";
+            else
+                print_ew "error" "Unknown architecture :- $ARCHITECTURE" && exit 1;
+            fi
 
             wget "https://partner-images.canonical.com/core/${UBUNTU_VERSION}/current/ubuntu-${UBUNTU_VERSION}-core-cloudimg-${ARCHITECTURE}-root.tar.gz" -q -O ubuntu.tar.gz;
 
