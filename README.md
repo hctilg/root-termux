@@ -4,8 +4,6 @@
 
 <img src="screenshot.png" alt="Screenshot" title="MsfPt -> Root(sudo) in the Termux">
 
-<br>
-
 ## Usage
 
 have you ever wanted to run scripts but they need root access or for some reason you want to enter your commands in the real linux environment? in this tutorial, it is executed only by running a Termux script in root mode.
