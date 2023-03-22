@@ -2,7 +2,7 @@
 
 **install Root in the Termux**
 
-<img src="screenshot.png" alt="Screenshot" title="MsfPt -> Root(sudo) in the Termux">
+<img src="screenshot.png" alt="Screenshot" title="Root(sudo) in the Termux">
 
 ## Usage
 
@@ -17,7 +17,7 @@ pkg install git -y
 
 ```bash
 # clone from github with git
-git clone https://github.com/msfpt/root-termux.git && cd root-termux && chmod +x *
+git clone https://github.com/0x6D7366/root-termux.git && cd root-termux && chmod +x *
 ```
 
 ```bash
