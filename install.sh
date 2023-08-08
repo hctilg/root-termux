@@ -3,7 +3,7 @@
 # coded by Glitch
 
 function print_ew () {
-
+M
     if [[ "$1" == "error" ]]; then
         s_text="\x1b[38;5;1m[ERROR]:";
         text="$2\n";
