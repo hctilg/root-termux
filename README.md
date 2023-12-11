@@ -2,7 +2,7 @@
 
 **install Root in the Termux**
 
-<img src="screenshot.png" alt="Screenshot" title="Root(sudo) in the Termux">
+<img src="screenshot.jpg" alt="Screenshot" title="Root(sudo) in the Termux">
 
 ## Usage
 
