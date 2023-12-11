@@ -31,7 +31,7 @@ then enter the following command and go through the installation process:
 
 ```bash
 # run bash script `install.sh`
-bash install.sh  # or `./install.sh`
+yes | bash install.sh
 ```
 
 <br>
