@@ -1,0 +1,2 @@
+# run bash script `install.sh`
+bash install.sh  # or `./install.sh`
