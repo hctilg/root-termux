@@ -1,6 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # -*- coding: utf-8 -*-
-# coded by Glitch
 
 function print_ew () {
 
